@@ -1,0 +1,25 @@
+INICIO
+1- Abrir os olhos
+2- Espreguiçar
+3- Ver as horas no celular ou na Mi Band
+4- Se estiver na hora de levantar
+	1- Levantar
+	2- Botar o chinelo
+	3- Ir ao banheiro
+	4- Fazer as necessidades
+	5- Tomar banho
+	7- Ir para a cozinha
+	8- Comer
+	9- Voltar ao banheiro
+	10- Escovar os dentes
+	11- Ir para o quarto
+	12- Se arrumar para o trabalho
+	13- Esperar a hora do ônibus
+	14- Ir trabalhar
+5- Senão se não estiver na hora de levantar
+	1- Pegar o celular
+	2- Realizar a checagem diária de notificações
+	3- Jogar
+6- Senão 
+	1- Voltar a dormir
+FIM
