@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/EBAC_Backend.iml" filepath="$PROJECT_DIR$/.idea/EBAC_Backend.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Mod8/Mod8.iml" filepath="$PROJECT_DIR$/Mod8/Mod8.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Mod8/TarefaCalculoMedia/TarefaCalculoMedia.iml" filepath="$PROJECT_DIR$/Mod8/TarefaCalculoMedia/TarefaCalculoMedia.iml" />
+    </modules>
+  </component>
+</project>
