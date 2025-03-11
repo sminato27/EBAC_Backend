@@ -1,4 +1,4 @@
-package agragação;
+package agregacao;
 
 public class Comprador {
 

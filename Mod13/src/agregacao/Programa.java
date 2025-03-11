@@ -1,4 +1,4 @@
-package agragação;
+package agregacao;
 
 public class Programa {
     public static void main(String[] args) {
@@ -15,14 +15,12 @@ public class Programa {
         venda.add(produtoTV);
         venda.add(produtoCel);
 
-
         venda.concretizarVenda();
         System.out.println(venda);
         venda.cancelarVenda();
         venda = null;
         System.out.println(venda);
         System.out.println(produtoCel.getNome());
-
 
     }
 
