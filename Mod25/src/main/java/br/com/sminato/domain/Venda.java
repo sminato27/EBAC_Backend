@@ -136,7 +136,5 @@ public class Venda implements Persistente {
 	public void setStatus(Status status) {
 		this.status = status;
 	}
-	
-	
-	
+
 }
