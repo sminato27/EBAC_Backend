@@ -3,9 +3,17 @@
   <database-model serializer="dbm" dbms="POSTGRES" family-id="POSTGRES" format-version="4.54">
     <root id="1">
       <DateStyle>dmy</DateStyle>
-      <IntrospectionStateNumber>1116</IntrospectionStateNumber>
+      <Grants>1||-9223372036854775808|c|G
+1||10|c|G
+1||10|C|G
+1||10|T|G
+4||-9223372036854775808|c|G
+4||10|c|G
+4||10|C|G
+4||10|T|G</Grants>
+      <IntrospectionStateNumber>1249</IntrospectionStateNumber>
       <ServerVersion>18.1</ServerVersion>
-      <StartupTime>1769696623</StartupTime>
+      <StartupTime>1770209091</StartupTime>
       <TimeZones>true ACDT
 true ACSST
 false ACST
@@ -814,7 +822,7 @@ false Zulu
 14759||10|C|G
 14759||-9223372036854775808|U|G
 14759||10|U|G</Grants>
-      <IntrospectionStateNumber>1116</IntrospectionStateNumber>
+      <IntrospectionStateNumber>1249</IntrospectionStateNumber>
       <ObjectId>16706</ObjectId>
       <OwnerName>postgres</OwnerName>
     </database>
@@ -4330,11 +4338,11 @@ false Zulu
       <AutoIntrospectionLevel>3</AutoIntrospectionLevel>
       <Comment>standard public schema</Comment>
       <Current>1</Current>
-      <LastIntrospectionL1Xid>1116</LastIntrospectionL1Xid>
-      <LastIntrospectionL2Xid>1116</LastIntrospectionL2Xid>
-      <LastIntrospectionL3Xid>1116</LastIntrospectionL3Xid>
+      <LastIntrospectionL1Xid>1249</LastIntrospectionL1Xid>
+      <LastIntrospectionL2Xid>1249</LastIntrospectionL2Xid>
+      <LastIntrospectionL3Xid>1249</LastIntrospectionL3Xid>
       <LastIntrospectionLevel>3</LastIntrospectionLevel>
-      <LastIntrospectionLocalTimestamp>2026-01-30.00:20:09</LastIntrospectionLocalTimestamp>
+      <LastIntrospectionLocalTimestamp>2026-02-04.17:53:50</LastIntrospectionLocalTimestamp>
       <ObjectId>2200</ObjectId>
       <StateNumber>546</StateNumber>
       <OwnerName>pg_database_owner</OwnerName>
@@ -4350,10 +4358,10 @@ false Zulu
     </sequence>
     <sequence id="276" parent="274" name="sq_produto">
       <DetailsLevel>2</DetailsLevel>
-      <ObjectId>16767</ObjectId>
+      <ObjectId>16778</ObjectId>
       <SequenceIdentity>1</SequenceIdentity>
       <StartValue>1</StartValue>
-      <StateNumber>981</StateNumber>
+      <StateNumber>1246</StateNumber>
       <StoredType>bigint|0s</StoredType>
       <OwnerName>postgres</OwnerName>
     </sequence>
@@ -4384,8 +4392,8 @@ false Zulu
     </table>
     <table id="280" parent="274" name="tb_produto">
       <DetailsLevel>2</DetailsLevel>
-      <ObjectId>16720</ObjectId>
-      <StateNumber>989</StateNumber>
+      <ObjectId>16779</ObjectId>
+      <StateNumber>1247</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>postgres</OwnerName>
     </table>
@@ -4496,76 +4504,48 @@ false Zulu
     <column id="296" parent="280" name="id">
       <NotNull>1</NotNull>
       <Position>1</Position>
-      <StateNumber>977</StateNumber>
+      <StateNumber>1247</StateNumber>
       <StoredType>bigint|0s</StoredType>
-      <SequenceId>16767</SequenceId>
       <TypeId>20</TypeId>
     </column>
-    <column id="297" parent="280" name="codigo">
+    <column id="297" parent="280" name="nome">
       <NotNull>1</NotNull>
       <Position>2</Position>
-      <StateNumber>977</StateNumber>
-      <StoredType>varchar(10)|0s</StoredType>
-      <TypeId>1043</TypeId>
-    </column>
-    <column id="298" parent="280" name="nome">
-      <NotNull>1</NotNull>
-      <Position>3</Position>
-      <StateNumber>977</StateNumber>
-      <StoredType>varchar(50)|0s</StoredType>
-      <TypeId>1043</TypeId>
-    </column>
-    <column id="299" parent="280" name="descricao">
-      <NotNull>1</NotNull>
-      <Position>4</Position>
-      <StateNumber>977</StateNumber>
+      <StateNumber>1247</StateNumber>
       <StoredType>varchar(100)|0s</StoredType>
       <TypeId>1043</TypeId>
     </column>
-    <column id="300" parent="280" name="valor">
+    <column id="298" parent="280" name="preco">
       <NotNull>1</NotNull>
-      <Position>5</Position>
-      <StateNumber>977</StateNumber>
-      <StoredType>numeric(10,2 digit)|0s</StoredType>
+      <Position>3</Position>
+      <StateNumber>1247</StateNumber>
+      <StoredType>numeric(19,2 digit)|0s</StoredType>
       <TypeId>1700</TypeId>
     </column>
-    <column id="301" parent="280" name="categoria">
+    <column id="299" parent="280" name="quantidade">
       <NotNull>1</NotNull>
-      <Position>6</Position>
-      <StateNumber>989</StateNumber>
-      <StoredType>varchar(50)|0s</StoredType>
-      <TypeId>1043</TypeId>
+      <Position>4</Position>
+      <StateNumber>1247</StateNumber>
+      <StoredType>integer|0s</StoredType>
+      <TypeId>23</TypeId>
     </column>
-    <index id="302" parent="280" name="pk_id_produto">
+    <index id="300" parent="280" name="tb_produto_pkey">
       <ColNames>id</ColNames>
-      <ObjectId>16728</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>16786</ObjectId>
       <Primary>1</Primary>
-      <StateNumber>977</StateNumber>
+      <StateNumber>1247</StateNumber>
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <index id="303" parent="280" name="uk_codigo_produto">
-      <ColNames>codigo</ColNames>
-      <ObjectId>16772</ObjectId>
-      <StateNumber>985</StateNumber>
-      <Unique>1</Unique>
-      <AccessMethodId>403</AccessMethodId>
-      <CollationNames>default</CollationNames>
-      <CollationIds>100</CollationIds>
-      <CollationParentNames>pg_catalog</CollationParentNames>
-    </index>
-    <key id="304" parent="280" name="pk_id_produto">
-      <ObjectId>16729</ObjectId>
+    <key id="301" parent="280" name="tb_produto_pkey">
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>16787</ObjectId>
       <Primary>1</Primary>
-      <StateNumber>977</StateNumber>
-      <UnderlyingIndexId>16728</UnderlyingIndexId>
+      <StateNumber>1247</StateNumber>
+      <UnderlyingIndexId>16786</UnderlyingIndexId>
     </key>
-    <key id="305" parent="280" name="uk_codigo_produto">
-      <ObjectId>16773</ObjectId>
-      <StateNumber>985</StateNumber>
-      <UnderlyingIndexId>16772</UnderlyingIndexId>
-    </key>
-    <column id="306" parent="281" name="id">
+    <column id="302" parent="281" name="id">
       <NotNull>1</NotNull>
       <Position>1</Position>
       <StateNumber>979</StateNumber>
@@ -4573,49 +4553,42 @@ false Zulu
       <SequenceId>16769</SequenceId>
       <TypeId>20</TypeId>
     </column>
-    <column id="307" parent="281" name="id_produto_fk">
+    <column id="303" parent="281" name="id_produto_fk">
       <NotNull>1</NotNull>
       <Position>2</Position>
       <StateNumber>979</StateNumber>
       <StoredType>bigint|0s</StoredType>
       <TypeId>20</TypeId>
     </column>
-    <column id="308" parent="281" name="id_venda_fk">
+    <column id="304" parent="281" name="id_venda_fk">
       <NotNull>1</NotNull>
       <Position>3</Position>
       <StateNumber>979</StateNumber>
       <StoredType>bigint|0s</StoredType>
       <TypeId>20</TypeId>
     </column>
-    <column id="309" parent="281" name="quantidade">
+    <column id="305" parent="281" name="quantidade">
       <NotNull>1</NotNull>
       <Position>4</Position>
       <StateNumber>979</StateNumber>
       <StoredType>integer|0s</StoredType>
       <TypeId>23</TypeId>
     </column>
-    <column id="310" parent="281" name="valor_total">
+    <column id="306" parent="281" name="valor_total">
       <NotNull>1</NotNull>
       <Position>5</Position>
       <StateNumber>979</StateNumber>
       <StoredType>numeric(10,2 digit)|0s</StoredType>
       <TypeId>1700</TypeId>
     </column>
-    <foreign-key id="311" parent="281" name="fk_id_prod_venda">
-      <ColNames>id_produto_fk</ColNames>
-      <ObjectId>16756</ObjectId>
-      <StateNumber>979</StateNumber>
-      <RefKeyColPositions>1</RefKeyColPositions>
-      <RefTableId>16720</RefTableId>
-    </foreign-key>
-    <foreign-key id="312" parent="281" name="fk_id_prod_venda_venda">
+    <foreign-key id="307" parent="281" name="fk_id_prod_venda_venda">
       <ColNames>id_venda_fk</ColNames>
       <ObjectId>16761</ObjectId>
       <StateNumber>979</StateNumber>
       <RefKeyColPositions>1</RefKeyColPositions>
       <RefTableId>16730</RefTableId>
     </foreign-key>
-    <index id="313" parent="281" name="pk_id_prod_venda">
+    <index id="308" parent="281" name="pk_id_prod_venda">
       <ColNames>id</ColNames>
       <ObjectId>16754</ObjectId>
       <Primary>1</Primary>
@@ -4623,13 +4596,13 @@ false Zulu
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <key id="314" parent="281" name="pk_id_prod_venda">
+    <key id="309" parent="281" name="pk_id_prod_venda">
       <ObjectId>16755</ObjectId>
       <Primary>1</Primary>
       <StateNumber>979</StateNumber>
       <UnderlyingIndexId>16754</UnderlyingIndexId>
     </key>
-    <column id="315" parent="282" name="id">
+    <column id="310" parent="282" name="id">
       <NotNull>1</NotNull>
       <Position>1</Position>
       <StateNumber>978</StateNumber>
@@ -4637,49 +4610,49 @@ false Zulu
       <SequenceId>16768</SequenceId>
       <TypeId>20</TypeId>
     </column>
-    <column id="316" parent="282" name="codigo">
+    <column id="311" parent="282" name="codigo">
       <NotNull>1</NotNull>
       <Position>2</Position>
       <StateNumber>978</StateNumber>
       <StoredType>varchar(10)|0s</StoredType>
       <TypeId>1043</TypeId>
     </column>
-    <column id="317" parent="282" name="id_cliente_fk">
+    <column id="312" parent="282" name="id_cliente_fk">
       <NotNull>1</NotNull>
       <Position>3</Position>
       <StateNumber>978</StateNumber>
       <StoredType>bigint|0s</StoredType>
       <TypeId>20</TypeId>
     </column>
-    <column id="318" parent="282" name="valor_total">
+    <column id="313" parent="282" name="valor_total">
       <NotNull>1</NotNull>
       <Position>4</Position>
       <StateNumber>978</StateNumber>
       <StoredType>numeric(10,2 digit)|0s</StoredType>
       <TypeId>1700</TypeId>
     </column>
-    <column id="319" parent="282" name="data_venda">
+    <column id="314" parent="282" name="data_venda">
       <NotNull>1</NotNull>
       <Position>5</Position>
       <StateNumber>978</StateNumber>
       <StoredType>timestamp with time zone|0s</StoredType>
       <TypeId>1184</TypeId>
     </column>
-    <column id="320" parent="282" name="status_venda">
+    <column id="315" parent="282" name="status_venda">
       <NotNull>1</NotNull>
       <Position>6</Position>
       <StateNumber>978</StateNumber>
       <StoredType>varchar(50)|0s</StoredType>
       <TypeId>1043</TypeId>
     </column>
-    <foreign-key id="321" parent="282" name="fk_id_cliente_venda">
+    <foreign-key id="316" parent="282" name="fk_id_cliente_venda">
       <ColNames>id_cliente_fk</ColNames>
       <ObjectId>16741</ObjectId>
       <StateNumber>978</StateNumber>
       <RefKeyColPositions>1</RefKeyColPositions>
       <RefTableId>16707</RefTableId>
     </foreign-key>
-    <index id="322" parent="282" name="pk_id_venda">
+    <index id="317" parent="282" name="pk_id_venda">
       <ColNames>id</ColNames>
       <ObjectId>16739</ObjectId>
       <Primary>1</Primary>
@@ -4687,7 +4660,7 @@ false Zulu
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <index id="323" parent="282" name="uk_codigo_venda">
+    <index id="318" parent="282" name="uk_codigo_venda">
       <ColNames>codigo</ColNames>
       <ObjectId>16774</ObjectId>
       <StateNumber>986</StateNumber>
@@ -4697,13 +4670,13 @@ false Zulu
       <CollationIds>100</CollationIds>
       <CollationParentNames>pg_catalog</CollationParentNames>
     </index>
-    <key id="324" parent="282" name="pk_id_venda">
+    <key id="319" parent="282" name="pk_id_venda">
       <ObjectId>16740</ObjectId>
       <Primary>1</Primary>
       <StateNumber>978</StateNumber>
       <UnderlyingIndexId>16739</UnderlyingIndexId>
     </key>
-    <key id="325" parent="282" name="uk_codigo_venda">
+    <key id="320" parent="282" name="uk_codigo_venda">
       <ObjectId>16775</ObjectId>
       <StateNumber>986</StateNumber>
       <UnderlyingIndexId>16774</UnderlyingIndexId>
